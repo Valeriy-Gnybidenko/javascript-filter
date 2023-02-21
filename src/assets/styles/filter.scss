@@ -14,25 +14,37 @@
   align-items: center;
   flex-wrap: wrap;
   gap: vw(30);
-}
 
-.filter__btn {
-  cursor: pointer;
-  font-size: vw(30);
-  border-radius: 10px;
-  padding: vw(20) vw(40);
-  background-color: rgb(9, 153, 189);
-  color: var(--white);
-  transition: background-color 0.1s ease;
+  .filter__btn {
+    cursor: pointer;
+    font-size: vw(30);
+    border-radius: 10px;
+    padding: vw(20) vw(40);
+    background-color: rgb(9, 153, 189);
+    color: var(--white);
+    transition: background-color 0.1s ease;
 
-  &:active {
-    background-color: rgb(7, 122, 151);
+    &:active {
+      background-color: rgb(7, 122, 151);
+    }
   }
 }
 
 .filter__list {
   margin-top: vw(30);
   grid-template-columns: repeat(3, 1fr);
+}
+
+.filter__product {
+  display: block;
+
+  &.hide {
+    display: none;
+  }
+
+  &.show {
+    display: block;
+  }
 }
 
 .filter__img {
